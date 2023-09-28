@@ -44,10 +44,10 @@ public class MaterialServiceImple implements IMaterialService {
 	public void actualizarMaterial(Material material) {
 		
 		Material matbase = this.getMaterialPorId(material.getId());
-		System.out.println("ID EN SERVICIO : "+ matbase.getId());
+
 		if(matbase != null) {
 			matbase.setId(material.getId());
-			matbase.setNombre(matbase.getNombre());
+			matbase.setNombre(material.getNombre());
 			matbase.setDescripcion(material.getDescripcion());
 			matbase.setTipoMaterial(material.getTipoMaterial());
 			matbase.setUrl(material.getUrl());
