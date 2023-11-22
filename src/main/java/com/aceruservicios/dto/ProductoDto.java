@@ -7,6 +7,7 @@ public class ProductoDto {
 
     @NotBlank
     private String nombre;
+    
     @Min(0)
     private Float precio;
 
